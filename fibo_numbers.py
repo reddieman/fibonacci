@@ -19,10 +19,11 @@ def fibo_numbers(fibo_range):
         print fibo_list
     else:
         fibo_list.append(1)
-        for number in range(fibo_range - 2):
-            x = len(fibo_list) # length of fibo list needed below
-            fibo_list.append\
-            (int(fibo_list[x - 1]) + int(fibo_list[x-2]))
+        for number in range(2, fibo_range):
+            fibo_list.append(\
+            fibo_list[len(fibo_list) - 1] + \
+            fibo_list[len(fibo_list) - 2]
+            )
         print fibo_list
         
 fibo_numbers(fibo_range)
